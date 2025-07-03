@@ -13,12 +13,25 @@ Engine , InternalCombustionEngine , ExternalCombustionEngine , PetrolEngine, Die
 */
 
 int main() {
-	Engine* eg = new DieselEngine();
-	LOG(eg->getEfficiency());
+	Engine* diesel_engine = new DieselEngine(18, 2, 1.4);
+	LOG(diesel_engine->getEfficiency());
 
 
-	delete eg;
-	eg = nullptr;
+	Engine* petrol_engine = new PetrolEngine(10, 1.4);
+	LOG(petrol_engine->getEfficiency());
+
+	Engine* steam_engine = new SteamEngine(773, 373);
+	LOG(steam_engine->getEfficiency());
+
+
+	delete steam_engine;
+	steam_engine = nullptr;
+
+	delete petrol_engine;
+	petrol_engine = nullptr;
+
+	delete diesel_engine;
+	diesel_engine = nullptr;
 
 	std::cin.get();
 }
