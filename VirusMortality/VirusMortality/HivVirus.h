@@ -4,12 +4,12 @@ class HivVirus : public Virus
 {
 
 public:
-	HivVirus() : Virus() {
+	HivVirus() : Virus(630000, 39900000) {
 
 	}
 
 
 
-	int getMortalityRate() const override;
+	double getMortalityRate() const override;
 };
 

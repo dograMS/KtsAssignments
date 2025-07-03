@@ -1,6 +1,6 @@
 #include "HivVirus.h"
 
 
-int HivVirus::getMortalityRate() const {
-	return 100;
+double HivVirus::getMortalityRate() const {
+	return Virus::calculateMortality();
 }

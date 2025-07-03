@@ -2,6 +2,6 @@
 
 
 
-int BirdFlue::getMortalityRate() const {
-	return 10;
+double BirdFlue::getMortalityRate() const {
+	return Virus::calculateMortality();
 }

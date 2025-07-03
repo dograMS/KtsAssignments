@@ -4,12 +4,12 @@ class BirdFlue : public Virus
 {
 
 public:
-	BirdFlue() : Virus() {
+	BirdFlue() : Virus(468, 972) {
 
 	}
 
 
 
-	int getMortalityRate() const override;
+	double getMortalityRate() const override;
 };
 

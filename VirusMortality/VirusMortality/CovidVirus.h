@@ -7,12 +7,12 @@ class CovidVirus : public Virus{
 
 public:
 
-	CovidVirus(): Virus() {
+	CovidVirus(): Virus(7000000, 700000000) {
 
 	}
 
 
 
-	int getMortalityRate() const override;
+	double getMortalityRate() const override;
 };
 

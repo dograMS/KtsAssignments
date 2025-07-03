@@ -1,6 +1,6 @@
 #include "CovidVirus.h"
 
 
-int CovidVirus::getMortalityRate() const {
-	return 1000;
+double CovidVirus::getMortalityRate() const {
+	return Virus::calculateMortality();
 }

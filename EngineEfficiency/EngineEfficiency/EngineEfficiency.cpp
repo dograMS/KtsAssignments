@@ -16,5 +16,9 @@ int main() {
 	Engine* eg = new DieselEngine();
 	LOG(eg->getEfficiency());
 
+
+	delete eg;
+	eg = nullptr;
+
 	std::cin.get();
 }
